@@ -33,7 +33,6 @@ module.exports = {
     connection: process.env_DATABASE_URL,
     migrations: {
       directory: './data/migrations',
-      tableName: 'knex_migrations'
     },
   }
 };
