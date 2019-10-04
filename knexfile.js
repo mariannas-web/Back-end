@@ -1,5 +1,5 @@
 // Update with your config settings.
-require('dotenv').config();
+require('dotenv').config('/.env');
 
 module.exports = {
 
@@ -30,13 +30,11 @@ module.exports = {
 
   production: {
     client: 'pg',
+    useNullAsDefault: true,
     connection: process.env_DATABASE_URL,
-    pool: {
-      min: 0,
-      max: 15
-    },
     migrations: {
       directory: './data/migrations',
+      tableName: 'knex_migrations'
     },
   }
 };
