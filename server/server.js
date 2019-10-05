@@ -2,7 +2,8 @@ require('dotenv').config()
 
 const express = require('express')
 const server = express()
-const userRouter = require('../auth/authentication')
+const auth = require('../auth/authentication')
+const user = require('../helpers/users-router')
 
 const cors = require('cors')
 const helmet = require('helmet')
@@ -12,7 +13,8 @@ server.use(express.json())
 server.use(cors())
 server.use(helmet()) 
 
-server.use('/api/user', userRouter)
+server.use('/api/auth', auth)
+server.use('/api/user', user)
 
 
 server.get('/', (req, res) => {
