@@ -5,7 +5,7 @@ exports.up = function(knex) {
       table.string('title')
       table.string('teaser')
       table.string('content')
-      table.string('you-tube-video')
+      table.string('youTubeVideo')
       table.string('link')
       table.string('image')
       table.string('source')

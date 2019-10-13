@@ -4,7 +4,6 @@ const express = require('express')
 const server = express()
 const auth = require('../auth/authentication')
 const user = require('../helpers/users-router')
-const musicRouter = require('../routers/music')
 const postNewsRouter = require('../routers/postNews')
 
 const cors = require('cors')
@@ -17,7 +16,6 @@ server.use(helmet())
 
 server.use('/api/auth', auth)
 server.use('/api/user', user)
-server.use('/api/music', musicRouter)
 server.use('/api/post', postNewsRouter)
 
 
