@@ -11,9 +11,9 @@ module.exports = (req, res, next) => {
             } else {
                 req.user = {username: decodedToken.username}
                 next()
-            }
+              }
         })
     } else {
-        res.status(400).json({message: "No credentials provided"})
-    }
+          res.status(400).json({message: "No credentials provided"})
+      }
 }

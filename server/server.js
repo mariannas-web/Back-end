@@ -2,21 +2,24 @@ require('dotenv').config()
 
 const express = require('express')
 const server = express()
-const auth = require('../auth/authentication')
-const user = require('../helpers/users-router')
-const postNewsRouter = require('../routers/postNews')
-
 const cors = require('cors')
 const helmet = require('helmet')
-
 
 server.use(express.json())
 server.use(cors())
 server.use(helmet()) 
 
+const auth = require('../auth/authentication')
 server.use('/api/auth', auth)
+
+const user = require('../routers/user')
 server.use('/api/user', user)
+
+const postNewsRouter = require('../routers/postNews')
 server.use('/api/post', postNewsRouter)
+
+const userFavsRouter = require('../routers/userFavs.js')
+server.use('/api/userFavs', userFavsRouter)
 
 
 server.get('/', (req, res) => {
