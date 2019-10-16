@@ -11,8 +11,8 @@ router.get('/', (req, res) => {
 
 
 router.post('/register', (req, res) => {
-    const { username, password } = req.body;
-    Users.add({ username, password: bcrypt.hashSync(password, 8) })
+    const { username, email, password } = req.body;
+    Users.add({ username, email, password: bcrypt.hashSync(password, 8) })
         .then(id => {
           res.status(201).json({ message: "User registered", id });
         })

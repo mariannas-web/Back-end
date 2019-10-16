@@ -15,7 +15,7 @@ function get(){
         'userFavs.favGenre', 
         'userFavs.userPub',
         'user.username AS user.username',
-        //'user.email AS user.email'
+        'user.email AS user.email'
     ])
     .join('user', 'user.id', 'userFavs.user_id')
 }

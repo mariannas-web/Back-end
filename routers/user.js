@@ -17,6 +17,7 @@ router.get('/:id',  (req, res) => {
     .catch(err => res.send(err))
 })
 
+
 router.post('/', (req, res) => {
     const body = req.body
     Users.add(body).then(response => {
@@ -41,18 +42,20 @@ router.get('/:id/userFavs', (req, res) => {
         })
 })
 
+
 router.post('/:user_id/userFavs', (req, res) => {
     const {user_id} = req.params
     const {favNewsPub, favGenre, userPub} = req.body
     UserFavs.add({favNewsPub, favGenre, userPub, user_id: parseInt(user_id, 10)})  
-      .then(response => {
-          if(response){
-              res.status(200).json(response)   
-          } else {
-              res.status(404).json({error: "Invalid Entry"})
-          }   
-      })
-      .catch(error => {res.status(500).json({error: "There was an error posting your content"})})
+        .then(response => {
+            if(response){
+                res.status(200).json(response)   
+            } else {
+                res.status(404).json({error: "Invalid Entry"})
+            }   
+        })
+        .catch(error => {res.status(500).json({error: "There was an error posting your content"})})
 })
+
 
 module.exports = router

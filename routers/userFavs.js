@@ -21,7 +21,7 @@ router.get('/:id', (req, res) => {
         } else {
               res.status(404).json({error: "Your request does not exist"})
           }
-     })
+    })
     .catch(error => { 
         res.status(500).json({error: "There was an error retrieving your data"})
     })

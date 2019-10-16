@@ -27,7 +27,6 @@ function add(user){
       .then(([id]) => findById(id))
 }
 
-
 function findById(id){
     return db('user').where({id}).first()
     .then(user => {
