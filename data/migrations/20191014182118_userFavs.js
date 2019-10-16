@@ -9,9 +9,9 @@ exports.up = function(knex) {
            .onUpdate('CASCADE')
            .onDelete('CASCADE');
       
-      table.specificType('favNewsPub', 'string ARRAY')
-      table.specificType('favGenre', 'string ARRAY')
-      table.specificType('userPub', 'string ARRAY')
+      table.string('favNewsPub')
+      table.string('favGenre')
+      table.string('userPub')
 
   })
 };
