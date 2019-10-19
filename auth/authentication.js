@@ -24,12 +24,12 @@ router.post('/register', (req, res) => {
 
 
 router.post('/login', (req, res) => {
-    const {username, password} = req.body
+    const {username, email, password} = req.body
     Users.findByUsername(username)
         .then(user => {
             if(user && bcrypt.compareSync(password, user.password)){
                 const token = generateToken(user)
-                res.status(200).json({Message: "You successfully logged in", token})
+                res.status(200).json({Message: "You successfully logged in", username, email, token})
             } else {
                   res.status(401).json({message: "The credentials that you've provided are invalid"})
               }
