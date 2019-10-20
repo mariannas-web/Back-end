@@ -11,7 +11,8 @@ router.get('/', (req, res) => {
 })
 
 router.post('/', (req, res) => {
-    db('chat').insert({id}).then(response => {
+    let body = req.body
+    db('chat').insert(body).then(response => {
         if(response){
             res.status(200).json(response)
         } else {
