@@ -24,14 +24,4 @@ router.post('/', (req, res) => {
 })
 
 
-router.delete('/:id', (req, res) => {
-    let {id} = req.params
-    db('chat').where({id}).del()
-      .then(response => {
-          res.status(200).json(response)
-      })
-      .catch(error => {res.status(500).json({error: "there was an error deleting your post"})})
-})
-
-
 module.exports = router
