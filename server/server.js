@@ -21,6 +21,9 @@ server.use('/api/post', postNewsRouter)
 const userFavsRouter = require('../routers/userFavs.js')
 server.use('/api/userFavs', userFavsRouter)
 
+const chatRouter = require('../routers/chat.js')
+server.use('/api/chat', chatRouter)
+
 
 server.get('/', (req, res) => {
     res.status(200).send("Mariannas Web Is Live")
