@@ -4,7 +4,8 @@ exports.up = function(knex) {
       table.increments() 
       table.string('post')
       table.string('username')
-      table.integer('date')
+      table.string('date')
+      table.string('time')
   })
 };
 
