@@ -1,0 +1,20 @@
+{
+    "articles": [
+        {
+            "mintPress": {
+                "title": "Sorting Facts From Fiction About the US Withdrawal From Syria",
+                "image": "https://www.mintpressnews.com/wp-content/uploads/2019/10/Ryka-a-DPR-Platoon-Commander-in-Krutaya-Balka_edited.jpg",
+                "teaser": "If one believes in the restoration of international law and the tenets of the UN Charter, then the withdrawal of U.S. military forces from northern Syria is a good thing. Here are some facts and history that explain why. ",
+                "link": "https://www.mintpressnews.com/",
+                "source": "Mint Press News"
+            },
+            "mintPress2": {
+                "image": "https://www.mintpressnews.com/wp-content/uploads/2019/10/Ryka-a-DPR-Platoon-Commander-in-Krutaya-Balka_edited.jpg",
+                "title": "Under Fire from Ukraine and Misperceived by the West, The People of the DPR Share Their Stories",
+                "source": "Mint Press News",
+                "teaser": "Eva Bartlett traveled to the besieged Donetsk People’s Republic to see firsthand how residents are faring amidst a western-backed Ukrainian incursion.",
+                "link": "https://www.mintpressnews.com/under-fire-from-ukraine-everyday-life-in-the-donetsk-peoples-republic/262363/"
+            }
+        }
+    ]
+}

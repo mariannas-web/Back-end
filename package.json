@@ -28,6 +28,7 @@
     "knex": "^0.19.4",
     "npm": "^6.11.3",
     "pg": "^7.12.1",
+    "puppeteer": "^1.20.0",
     "sqlite3": "^4.1.0"
   },
   "devDependencies": {

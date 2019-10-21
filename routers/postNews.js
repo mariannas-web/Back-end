@@ -1,6 +1,7 @@
 const router = require('express').Router()
 const db = require('../data/dbConfig')
 
+const mint = require('../mint.json')
 
 
 router.get('/', (req, res) => {
@@ -45,5 +46,9 @@ router.put('/:id', (req, res) => {
         })
 })
 
+
+router.get('/feed', (req, res) => {
+    res.status(200).json(mint)
+})
 
 module.exports = router
