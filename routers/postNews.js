@@ -47,8 +47,5 @@ router.put('/:id', (req, res) => {
 })
 
 
-router.get('/feed', (req, res) => {
-    res.status(200).json(mint)
-})
 
 module.exports = router
