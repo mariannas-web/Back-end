@@ -1,9 +1,6 @@
 const router = require('express').Router()
 const db = require('../data/dbConfig')
 
-const mint = require('../mint.json')
-
-
 router.get('/', (req, res) => {
     db('postNews').then(response => {
         res.status(201).json(response)
