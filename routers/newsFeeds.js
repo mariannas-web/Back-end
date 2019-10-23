@@ -1,5 +1,5 @@
 const router = require('express').Router()
-const undergroundFeed = require('../scraper/json/mint.json')
+const undergroundFeed = require('../mint.json')
 const hedge = require('../zerohedge.json')
 
 
