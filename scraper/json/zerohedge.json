@@ -1,0 +1,30 @@
+{
+    "articles": [
+        {
+            "zeroHedge": {
+                "title": "\"You've Got To Be Kidding Me\": Outraged WeWork Employees Furious At Neumann's $1.2BN \"Platinum Parachute\"",
+                "image": "https://zh-prod-1cc738ca-7d3b-4a72-b792-20bd8d8fa069.storage.googleapis.com/s3fs-public/styles/teaser_small/public/2019-10/outage.jpg?itok=x2rRbYhS",
+                "teaser": "As the Nationals and Astros begin the World Series, the baseball gods are teaching us a valuable lesson that applies to investing as much as it does sports...",
+                "link": "https://www.zerohedge.com/",
+                "source": "Zero Hedge",
+                "articleLink": "https://www.zerohedge.com/personal-finance/youve-got-be-kidding-me-outraged-wework-employees-furious-neumanns-12bn-platinum"
+            },
+            "zeroHedge1": {
+                "title": "GOP Lawmakers Storm Secretive Impeachment Hearing In Capitol Basement; Demand Transparency",
+                "image": "https://www.zerohedge.com/s3/files/styles/teaser_small/public/2019-10/EHlB8eAXYAEDo5m.jpg?h=22b9967b&itok=YynM4j8x",
+                "teaser": "The fake meat bubble has burst...",
+                "link": "https://www.zerohedge.com/",
+                "source": "Zero Hedge",
+                "articleLink": "https://www.zerohedge.com/political/gop-lawmakers-storm-secretive-impeachment-hearing-capitol-basement-demand-transparency"
+            },
+            "zeroHedge2": {
+                "title": "The Bandwagon Effect: A World Series Lesson For Investors",
+                "image": "https://www.zerohedge.com/s3/files/styles/teaser_small/public/2019-10/2019-10-23_6-44-10.jpg?itok=5TxljK_S",
+                "teaser": "\"Now they (the Americans) prefer to leave the Kurds at the border (with Turkey).\" ",
+                "link": "https://www.zerohedge.com/",
+                "source": "Zero Hedge",
+                "articleLink": "https://www.zerohedge.com/markets/bandwagon-effect-world-series-lesson-investors"
+            }
+        }
+    ]
+}
