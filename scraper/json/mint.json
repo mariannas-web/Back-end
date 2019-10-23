@@ -9,7 +9,7 @@
                 "source": "Mint Press News"
             },
             "mintPress2": {
-                "image": "https://www.mintpressnews.com/wp-content/uploads/2019/10/Ryka-a-DPR-Platoon-Commander-in-Krutaya-Balka_edited.jpg",
+                "image": "https://www.mintpressnews.com/wp-content/uploads/2019/01/AP19011350884471_edited.jpg",
                 "title": "Under Fire from Ukraine and Misperceived by the West, The People of the DPR Share Their Stories",
                 "source": "Mint Press News",
                 "teaser": "Eva Bartlett traveled to the besieged Donetsk People’s Republic to see firsthand how residents are faring amidst a western-backed Ukrainian incursion.",
@@ -21,27 +21,30 @@
                 "source": "Mint Press News",
                 "teaser": "Working directly with Ecuador’s corrupt government, the U.S. government abandoned all sense of legality and moral decency by spying on Assange twenty-four hours a day via an illegal livestream surveillance operation set up by a private security firm and approved by Ecuador’s president.",
                 "link": "https://www.mintpressnews.com/us-complicit-julian-assange-surveillance-operation-ecuadorian-embassy/262131/"
-            },
+            }, 
             "zeroHedge": {
-                "title": "How Democrats Became The Party Of Monopoly And Corruption",
-                "image": "https://www.zerohedge.com/s3/files/styles/teaser_small/public/2019-10/1571672318619-How-Democrats-Became-the-Party-of-Monopoly-and-Corruption_HF_Green.jpeg?itok=0ytTxDyy",
-                "teaser": "A self-styled paragon of ethical behavior, Romney ‘fesses up to Twitter pseudonym...",
+                "title": "The Pathocracy Of The Deep State: Tyranny At The Hands Of A Psychopathic Government",
+                "image": "https://www.zerohedge.com/s3/files/styles/teaser_small/public/2019-10/03-29-2016_DemocracyToPathocracy-700x210.jpg?h=761b4200&itok=lpeD3-Mf",
+                "teaser": "“[T]yranny does not flourish because perpetuators are helpless and ignorant of their actions. It flourishes because they actively identify with those who promote vicious acts as virtuous.”",
                 "link": "https://www.zerohedge.com/",
-                "source": "Zero Hedge"
+                "source": "Zero Hedge",
+                "articleLink": "https://www.zerohedge.com/political/pathocracy-deep-state-tyranny-hands-psychopathic-government"
             },
             "zeroHedge1": {
-                "title": "Russia Says 500 Terrorists Have Escaped N.Syria; US Envoy Downplays It At \"Very Few\"",
-                "image": "https://www.zerohedge.com/s3/files/styles/teaser_small/public/2019-10/ISIS-terrorists.jpg?itok=A3Lz9p8p",
-                "teaser": "Taylor provided an \"excruciatingly detailed\" opening statement...",
+                "title": "Visualizing The World's 20 Most Profitable Companies",
+                "image": "https://www.zerohedge.com/s3/files/styles/teaser_small/public/2019-10/most-profitable-companies-1200px.jpg?itok=N2FTR3Yt",
+                "teaser": "The biggest chunk of the earnings pie is increasingly split by fewer and fewer companies...",
                 "link": "https://www.zerohedge.com/",
-                "source": "Zero Hedge"
+                "source": "Zero Hedge",
+                "articleLink": "https://www.zerohedge.com/markets/visualizing-worlds-20-most-profitable-companies"
             },
             "zeroHedge2": {
-                "title": "Bi*ch Please: Democrat's Bill Would Punish Curse Word With Jail",
-                "image": "https://www.zerohedge.com/s3/files/styles/teaser_small/public/2019-10/yeah%20bitch.png?h=aa1883e2&itok=lQmJ0bTy",
-                "teaser": "Russia expected to send additional troop reinforcements to the region as part of the Putin-Erdogan deal brokered Tuesday.",
+                "title": "The Four A's Of American Policy Failure In Syria",
+                "image": "https://www.zerohedge.com/s3/files/styles/teaser_small/public/2019-10/erdogan-putin-assad.png?itok=wpJjFX1-",
+                "teaser": "How events in Afghanistan, Astana, Adana, and Ankara all led to the victory of Russian diplomacy over U.S. force...",
                 "link": "https://www.zerohedge.com/",
-                "source": "Zero Hedge"
+                "source": "Zero Hedge",
+                "articleLink": "https://www.zerohedge.com/geopolitical/four-american-policy-failure-syria"
             }
         }
     ]

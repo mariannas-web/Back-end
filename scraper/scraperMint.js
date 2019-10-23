@@ -27,8 +27,7 @@ let scrape = async () => {
         }
 
         //------------------mint press 2 ------------------------------------------------------------//
-
-        let image2 = document.querySelector('div[class="site-inner"] > div[class="featured-post"] > div[class="featured-post-image"] > a > img').src
+        let image2 = document.querySelector("img[class='attachment-featured-small size-featured-small']").src
         let title2 = document.querySelector('div[class="featured-post-text first-featured-post-text black-box"] > h1 > a').innerText 
         let teaser2 = document.querySelector('div[class="featured-post-text first-featured-post-text black-box"] > h2 > p').innerText
         let link2 = document.querySelector('div[class="featured-post"] > div[class="featured-post-image"] > a').href
@@ -70,7 +69,7 @@ let scrape = async () => {
 }
 
 scrape().then((value) => {
-    fs.writeFile('../mint.json', JSON.stringify(value, null, 4),error => {console.log('there was an error', error)})
+    fs.writeFile('./json/mint.json', JSON.stringify(value, null, 4),error => {console.log('there was an error', error)})
 })
 
  
