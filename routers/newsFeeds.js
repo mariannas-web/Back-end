@@ -6,7 +6,7 @@ const hedge = require('../zerohedge.json')
 //-----------------Mint Press News-------------------------------//
 
 router.get('/mint', (req, res) => {
-    res.status(200).json(undergroundFeed)
+    res.status(200).json({cat: 'james'})
 })
 
 
