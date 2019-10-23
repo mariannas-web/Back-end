@@ -66,5 +66,5 @@ let scrape = async () => {
 }
 
 scrape().then((value) => {
-    fs.writeFile('./zerohedge.json', JSON.stringify(value, null, 4),error => {console.log('there was an error', error)})
+    fs.writeFile('../zerohedge.json', JSON.stringify(value, null, 4),error => {console.log('there was an error', error)})
 })

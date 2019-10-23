@@ -70,7 +70,7 @@ let scrape = async () => {
 }
 
 scrape().then((value) => {
-    fs.writeFile('./mint.json', JSON.stringify(value, null, 4),error => {console.log('there was an error', error)})
+    fs.writeFile('../mint.json', JSON.stringify(value, null, 4),error => {console.log('there was an error', error)})
 })
 
  
