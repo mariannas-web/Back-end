@@ -1,11 +1,11 @@
 const router = require('express').Router()
-const undergroundFeed = require('../scraper/json/mint.json')
+const undergroundFeed = require('../mint.json')
 const hedge = require('../zerohedge.json')
 
 
 //-----------------Mint Press News-------------------------------//
 
-router.get('/', (req, res) => {
+router.get('/mint', (req, res) => {
     res.status(200).json(undergroundFeed)
 })
 
