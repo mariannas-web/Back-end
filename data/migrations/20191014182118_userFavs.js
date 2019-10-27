@@ -9,10 +9,7 @@ exports.up = function(knex) {
            .onUpdate('CASCADE')
            .onDelete('CASCADE');
       
-      table.string('favNewsPub')
-      table.string('favGenre')
-      table.string('userPub')
-
+      table.string('follow')
   })
 };
 

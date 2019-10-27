@@ -39,7 +39,7 @@ router.post('/', (req, res) => {
 })
 
 
-router.get('/:id/userFavs', (req, res) => {
+router.get('/:id/userPost', (req, res) => {
     const { id } = req.params
     UserFavs.getByUserId(id)
         .then( response => {
@@ -52,7 +52,7 @@ router.get('/:id/userFavs', (req, res) => {
 })
 
 
-router.post('/:user_id/userFavs', (req, res) => {
+router.post('/:user_id/userPost', (req, res) => {
     const {user_id} = req.params
     const {favNewsPub, favGenre, userPub} = req.body
     UserFavs.add({favNewsPub, favGenre, userPub, user_id: parseInt(user_id, 10)})  
