@@ -18,8 +18,8 @@ server.use('/api/user', user)
 const postNewsRouter = require('../routers/postNews')
 server.use('/api/post', postNewsRouter)
 
-const userFavsRouter = require('../routers/userFavs.js')
-server.use('/api/userFavs', userFavsRouter)
+const userPostRouter = require('../routers/userFavs.js')
+server.use('/api/userPost', userPostRouter)
 
 const chatRouter = require('../routers/chat.js')
 server.use('/api/chat', chatRouter)

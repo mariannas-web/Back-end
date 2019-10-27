@@ -1,5 +1,5 @@
 const router = require('express').Router()
-const userFavs = require('../helpers/userFavs-model')
+const userPost = require('../helpers/userFavs-model')
 const db = require('../data/dbConfig')
 
 
@@ -15,7 +15,7 @@ router.get('/', (req, res) => {
 
 router.get('/:id', (req, res) => {
     const {id} = req.params
-    userFavs.getById(id).then(response => {
+    userPost.getById(id).then(response => {
         if(response){
             res.status(200).json(response)  
         } else {
@@ -30,7 +30,7 @@ router.get('/:id', (req, res) => {
 
 router.post('/', (req, res) => {
     const body = req.body
-    db('userFavs').insert(body).then(response => {
+    db('userPost').insert(body).then(response => {
         res.status(200).json(response)
     })
 

@@ -1,6 +1,6 @@
 const router = require('express').Router()
 const Users = require('../helpers/users-model')
-const UserFavs = require('../helpers/userFavs-model')
+const UserPost = require('../helpers/userFavs-model')
 const restricted = require('../auth/restricted-middleware')
 
 
@@ -41,7 +41,7 @@ router.post('/', (req, res) => {
 
 router.get('/:id/userPost', (req, res) => {
     const { id } = req.params
-    UserFavs.getByUserId(id)
+    UserPost.getByUserId(id)
         .then( response => {
             if(response){
                 res.status(200).json(response)
@@ -54,8 +54,8 @@ router.get('/:id/userPost', (req, res) => {
 
 router.post('/:user_id/userPost', (req, res) => {
     const {user_id} = req.params
-    const {favNewsPub, favGenre, userPub} = req.body
-    UserFavs.add({favNewsPub, favGenre, userPub, user_id: parseInt(user_id, 10)})  
+    const {title, teaser, link, youTubeVideo} = req.body
+    UserPost.add({title, teaser, link, youTubeVideo, user_id: parseInt(user_id, 10)})  
         .then(response => {
             if(response){
                 res.status(200).json(response)   

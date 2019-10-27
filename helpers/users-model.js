@@ -1,5 +1,5 @@
 const db = require('../data/dbConfig')
-const UserFavs = require('./userFavs-model')
+const UserPost = require('./userFavs-model')
 
 module.exports = {
     add,
@@ -30,9 +30,9 @@ function add(user){
 function findById(id){
     return db('user').where({id}).first()
     .then(user => {
-        return UserFavs.getByUserId(id)
-          .then(userFavs => {
-              user.userFavs = userFavs
+        return UserPost.getByUserId(id)
+          .then(userPost => {
+              user.userPost = userPost
               return user
           })
     })
