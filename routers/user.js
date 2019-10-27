@@ -5,6 +5,15 @@ const restricted = require('../auth/restricted-middleware')
 
 
 
+router.get('/', (req, res) => {
+    Users.find().then(response => {
+        res.status(200).json(response)
+    })
+    .catch(error => {
+        res.status(500).json({error: 'There was an error retrieving the users', error})
+    })
+})
+
 router.get('/:id',  (req, res) => {
     const {id} = req.params
     Users.findById(id).then(response => {
