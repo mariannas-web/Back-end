@@ -4,7 +4,7 @@ const db = require('../data/dbConfig')
 
 
 router.get('/', (req, res) => {
-    userFavs.get().then(response => {
+    userPost.get().then(response => {
         res.status(200).json(response)
     })
     .catch(error => { 
@@ -33,7 +33,6 @@ router.post('/', (req, res) => {
     db('userPost').insert(body).then(response => {
         res.status(200).json(response)
     })
-
 })
 
 
