@@ -39,7 +39,7 @@ router.post('/', (req, res) => {
 })
 
 router.delete('/:id', (req, res) => {
-    const {id} = req.body
+    const {id} = req.params
     db('userPost').where({id}).del()
     .then(response => {
         res.status(200).json(response)
