@@ -14,6 +14,8 @@ exports.up = function(knex) {
         table.string('link')
         table.string('youTubeVideo')
         table.string('content')
+        table.string('genre')
+        table.string('date')
     })
   };
   

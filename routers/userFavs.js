@@ -33,6 +33,20 @@ router.post('/', (req, res) => {
     db('userPost').insert(body).then(response => {
         res.status(200).json(response)
     })
+    .catch(error => {
+        res.status(500).json({error: "There was an error posting your message"})
+    })
+})
+
+router.delete('/:id', (req, res) => {
+    const {id} = req.body
+    db('userPost').where({id}).del()
+    .then(response => {
+        res.status(200).json(response)
+    })
+    .catch(error => {
+        res.status(500).json({error: "There was an error deleting the user"})
+    })
 })
 
 
