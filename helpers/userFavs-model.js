@@ -15,6 +15,9 @@ function get(){
         'userPost.teaser', 
         'userPost.link',
         'userPost.youTubeVideo',
+        'userPost.content',
+        'userPost.genre',
+        'userPost.date',
         'user.username AS user.username',
         'user.email AS user.email'
     ])
