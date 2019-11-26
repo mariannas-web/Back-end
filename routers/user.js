@@ -1,6 +1,6 @@
 const router = require('express').Router()
 const Users = require('../helpers/users-model')
-const UserPost = require('../helpers/userFavs-model')
+const UserPost = require('../helpers/userPost-model')
 const restricted = require('../auth/restricted-middleware')
 
 

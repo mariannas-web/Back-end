@@ -1,5 +1,5 @@
 const router = require('express').Router()
-const userPost = require('../helpers/userFavs-model')
+const userPost = require('../helpers/userPost-model')
 const db = require('../data/dbConfig')
 
 
@@ -30,7 +30,7 @@ router.get('/:id', (req, res) => {
 
 router.post('/', (req, res) => {
     const body = req.body
-    db('userFavs').insert(body).then(response => {
+    db('userPost').insert(body).then(response => {
         res.status(200).json(response)
     })
     .catch(error => {
@@ -40,7 +40,7 @@ router.post('/', (req, res) => {
 
 router.delete('/:id', (req, res) => {
     const {id} = req.params
-    db('userFavs').where({id}).del()
+    db('userPost').where({id}).del()
     .then(response => {
         res.status(200).json(response)
     })
