@@ -16,6 +16,7 @@ exports.up = function(knex) {
         table.string('content')
         table.string('genre')
         table.string('date')
+        table.string('likes')
     })
   };
   

@@ -10,6 +10,7 @@ exports.up = function(knex) {
            .onDelete('CASCADE');
       
       table.string('follow')
+      table.boolean('isFollowed')
   })
 };
 
