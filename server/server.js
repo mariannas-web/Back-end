@@ -30,6 +30,9 @@ server.use('/api/chat', chatRouter)
 const newsFeedRouter = require('../routers/newsFeeds.js')
 server.use('/api/feed', newsFeedRouter)
 
+const contactRouter = require('../routers/contact.js')
+server.use('/api/contact', contactRouter)
+
 
 server.get('/', (req, res) => {
     res.status(200).send("Mariannas Web Is Live")
