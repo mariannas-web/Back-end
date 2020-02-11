@@ -3,7 +3,6 @@ const Users = require('../helpers/users-model')
 const UserPost = require('../helpers/userPost-model')
 const restricted = require('../auth/restricted-middleware')
 
-const db = require('../data/dbConfig')
 
 
 router.get('/', (req, res) => {
@@ -15,17 +14,17 @@ router.get('/', (req, res) => {
     })
 })
 
-router.get('/:id', (req, res) => {
+router.get('/:id',  (req, res) => {
     const {id} = req.params
-    db('user').where({id}).then(response => {
-        res.status(200).json(response)
+    Users.findById(id).then(response => {
+        if(response){
+            res.status(200).json(response)    
+        } else {
+            res.status(404).json({error: 'Id does not exist'})
+          }
     })
-    .catch(error => {
-        res.status(500).json({error: "there was an error finding user id", error})
-    })
+    .catch(err => res.send(err))
 })
-
-
 
 
 router.post('/', (req, res) => {
